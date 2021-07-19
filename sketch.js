@@ -43,7 +43,7 @@ async function getBackgroundImg(){
 
     // write code slice the datetime
     var datetime=responseJSON.currentDateTime;
-    var hour=datetime//.slice (11,13)
+    var hour=datetime.slice (11,13)
     
     // add conditions to change the background images from sunrise to sunset
 if (hour<=03 && hour<04){
