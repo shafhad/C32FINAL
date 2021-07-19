@@ -36,7 +36,7 @@ background(backgroundImg)
 async function getBackgroundImg(){
 
     // write code to fetch time from API
-    var response = await fetch ("https://worldtimeapi.org/api/timezone/Asia/kolkata")
+    var response = await fetch ("https://worldclockapi.com/api/json/est/now")
     
     //change the data in JSON format
     var responseJSON = await response.json();
