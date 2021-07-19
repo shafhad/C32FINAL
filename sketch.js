@@ -36,13 +36,13 @@ background(backgroundImg)
 async function getBackgroundImg(){
 
     // write code to fetch time from API
-    var response = await fetch ("https://worldclockapi.com/api/json/est/now")
+    var response = await fetch ("https://worldclockapi.com/api/json/utc/now")
     
     //change the data in JSON format
     var responseJSON = await response.json();
 
     // write code slice the datetime
-    var datetime=responseJSON.datetime;
+    var datetime=responseJSON.currentDateTime;
     var hour=datetime//.slice (11,13)
     
     // add conditions to change the background images from sunrise to sunset
